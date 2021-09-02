@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Automatic Campaign Assignment</title>
+
+    <!-- Styling -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+
+    <!-- Select2 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/style1200.css" />
+    <link rel="stylesheet" href="/styleipad.css" />
+    <link rel="stylesheet" href="/styleipadpro.css" />
+  </head>
+  <body>
+    <div class="white-box">
+      <div class="left-side">
+        <div class="title">Automatic Campaign Assignment</div>
+        <div class="select-campaign-container">
+          <select name="state" class="campaign-list-dropdown">
+            <option value="" selected hidden>Select Campaign ...</option>
+            <option value="C001">C001 - Cancer Research Campaign</option>
+            <option value="C002">C002 - Covid Campaign</option>
+            <option value="C003">C003 - Heart Campaign</option>
+            <option value="C004">C004 - Lung Campaign</option>
+            <option value="C005">C005 - Liver Campaign</option>
+            <option value="C006">C006 - Intestine Campaign</option>
+          </select>
+          <div class="campaign-select-go-container">
+            <a href="#" class="campaign-select-go-btn">GO</a>
+          </div>
+        </div>
+
+        <div class="parameter-container">
+          <div class="paramater-container-box">
+            <select name="state" class="business-unit-dropdown">
+              <option value="" selected hidden>Select Business Unit ...</option>
+              <option value="CHC">Customer Health Care</option>
+              <option value="Pharma">Pharma</option>
+              <option value="Vaccine">Vaccine</option>
+            </select>
+            <select name="state" class="brand-unit-dropdown">
+              <option value="" selected hidden>Select Brand ...</option>
+              <option value="Bisolvon">Bisolvon</option>
+              <option value="Dulcolax">Dulcolax</option>
+              <option value="Pharmaton">Pharmaton</option>
+              <option value="Lactacyd">Lactacyd</option>
+              <option value="Novalgin">Novalgin</option>
+            </select>
+          </div>
+          <div class="search-btn">
+            <i class="fas fa-search"></i>
+          </div>
+        </div>
+
+        <div class="file-upload-container">
+          <div class="upload-label">Select File to Upload</div>
+
+          <form action="#">
+            <input type="file" class="file-input" hidden />
+            <i class="fas fa-cloud-upload-alt"></i>
+            <p>Browse File To Upload</p>
+          </form>
+          <section class="progress-area">
+            <li class="row">
+              <i class="fas fa-file-alt"></i>
+              <div class="content">
+                <div class="details">
+                  <span class="name">Image_01.png · Uploading</span>
+                  <span class="percent">50%</span>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress"></div>
+                </div>
+              </div>
+            </li>
+          </section>
+          <div class="uploaded-area-box">
+            <section class="uploaded-area">
+              <li class="row">
+                <div class="content">
+                  <i class="fas fa-file-alt"></i>
+                  <div class="details">
+                    <span class="name">Image_01.png · Uploading</span>
+                    <span class="percent">70kb</span>
+                  </div>
+                </div>
+                <i class="fas fa-check"></i>
+              </li>
+              <li class="row">
+                <div class="content">
+                  <i class="fas fa-file-alt"></i>
+                  <div class="details">
+                    <span class="name">Image_01.png · Uploading</span>
+                    <span class="percent">70kb</span>
+                  </div>
+                </div>
+                <i class="fas fa-check"></i>
+              </li>
+              <li class="row">
+                <div class="content">
+                  <i class="fas fa-file-alt"></i>
+                  <div class="details">
+                    <span class="name">Image_01.png · Uploading</span>
+                    <span class="percent">70kb</span>
+                  </div>
+                </div>
+                <i class="fas fa-check"></i>
+              </li>
+              <li class="row">
+                <div class="content">
+                  <i class="fas fa-file-alt"></i>
+                  <div class="details">
+                    <span class="name">Image_01.png · Uploading</span>
+                    <span class="percent">70kb</span>
+                  </div>
+                </div>
+                <i class="fas fa-check"></i>
+              </li>
+            </section>
+          </div>
+        </div>
+      </div>
+
+      <!-- Details -->
+      <div class="right-side">
+        <div class="campaign-description-box">
+          <div class="description-title">Campaign Details</div>
+          <div class="description-information">
+            <div class="description-label">Campaign ID</div>
+            <div class="description-input">
+              <input type="text" readonly value="C001" />
+            </div>
+          </div>
+
+          <div class="description-information">
+            <div class="description-label">Campaign Name</div>
+            <div class="description-input">
+              <input type="text" readonly value="Cancer Research Campaign" />
+            </div>
+          </div>
+          <div class="description-information">
+            <div class="description-label">Start Date</div>
+            <div class="description-input">
+              <input type="text" readonly value="1 January 2020" />
+            </div>
+          </div>
+          <div class="description-information">
+            <div class="description-label">End Date</div>
+            <div class="description-input">
+              <input type="text" readonly value="3 March 2020" />
+            </div>
+          </div>
+          <div class="description-information">
+            <div class="description-label">Business Unit</div>
+            <div class="description-input">
+              <input type="text" readonly value="Customer Healthcare" />
+            </div>
+          </div>
+          <div class="description-information">
+            <div class="description-label">Brand</div>
+            <div class="description-input">
+              <input type="text" readonly value="Pharmaton" />
+            </div>
+          </div>
+          <div class="description-information">
+            <div class="description-label">Target Audience</div>
+            <div class="description-input">
+              <input type="text" readonly value="General Medicines" />
+            </div>
+          </div>
+        </div>
+        <div class="save-and-submit-container">
+          <a href="#" class="save-and-submit-btn">Save and Submit</a>
+          <i class="fas fa-save"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- Script -->
+    <script src="/script.js"></script>
+  </body>
+</html>

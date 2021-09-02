@@ -1,0 +1,364 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #444492;
+}
+
+::-webkit-scrollbar-thumb {
+  color: #444492;
+}
+
+::-webkit-scrollbar-track {
+  color: #444492;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+.white-box {
+  width: 1200px;
+  height: 600px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px 20px;
+
+  display: flex;
+}
+
+.left-side {
+  width: 45%;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.title {
+  font-size: 25px;
+  font-weight: bold;
+  color: #444492;
+  margin-bottom: 10px;
+}
+
+.select-campaign-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 10px 0;
+}
+
+.campaign-select-go-container {
+  width: 100px;
+  height: 30px;
+  background-color: #444492;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.campaign-select-go-container:hover {
+  background-color: #79799f;
+}
+
+.campaign-select-go-container a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Target first appearance */
+
+/* .select2-dropdown.select2-dropdown--below {
+  width: 400px !important;
+} */
+
+.select2 {
+  width: 100% !important;
+  margin-right: 10px;
+}
+
+.select2-container--default .select2-selection--single {
+  padding: 3px;
+  height: 30px;
+  width: 100%;
+  font-size: 15px;
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+}
+
+/* Target Parameter appearance */
+.parameter-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.paramater-container-box {
+  width: 100%;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Target All Appearance */
+.select2-container--default
+  .select2-selection--single
+  .select2-selection__rendered {
+  color: #444492;
+}
+
+.select2-results__options .select2-results__option--selected {
+  background-color: #d9d9ff;
+}
+
+.select2-results__options
+  .select2-results__option--highlighted.select2-results__option--selectable {
+  background-color: #79799f;
+}
+
+.search-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* height: 100%; */
+
+  background-color: #444492;
+  width: 100px;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.search-btn:hover {
+  background-color: #79799f;
+}
+
+.search-btn i {
+  color: #fff;
+  font-size: 30px;
+}
+
+/* Right Side */
+.right-side {
+  flex-grow: 1;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.campaign-description-box {
+  background: #d9d9ff;
+  border-radius: 8px;
+  height: 100%;
+
+  padding: 20px 20px;
+  color: #000;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.description-title {
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.description-information {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.description-label {
+  width: 200px;
+}
+
+.description-input {
+  flex-grow: 1;
+}
+
+.description-input input {
+  width: 100%;
+  padding: 5px 5px;
+}
+
+.save-and-submit-container {
+  height: 50px;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #444492;
+  border-radius: 8px;
+  font-weight: bolder;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.save-and-submit-container i {
+  color: #fff;
+  font-size: 20px;
+}
+
+.save-and-submit-btn {
+  text-decoration: none;
+  color: #fff;
+  margin-right: 10px;
+}
+
+.save-and-submit-container:hover {
+  background-color: #79799f;
+}
+
+/* Upload Area */
+.file-upload-container {
+  /* background-color: #d9d9ff; */
+  flex-grow: 1;
+  margin-top: 5px;
+  display: flex;
+
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.upload-label {
+  font-size: large;
+  color: #444492;
+
+  font-weight: bold;
+}
+
+.file-upload-container form {
+  height: 100px;
+  display: flex;
+  margin: 5px 0;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 5px;
+  border: 2px dashed#6990f2;
+}
+
+.file-upload-container form :where(i, p) {
+  color: #6990f2;
+}
+
+.file-upload-container form i {
+  font-size: 30px;
+}
+
+.file-upload-container form p {
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+section .row {
+  background: #d9d9ff;
+  margin-bottom: 10px;
+  list-style: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+section .row i {
+  font-size: 20px;
+  color: #6990f2;
+}
+
+.progress-area .row .content {
+  width: 100%;
+  margin-left: 10px;
+}
+
+.progress-area .details span {
+  font-size: 12px;
+}
+
+.progress-area .details {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  justify-content: space-between;
+}
+
+.progress-area .progress-bar {
+  height: 6px;
+  width: 100%;
+  background: #fff;
+  /* margin-bottom: 4px; */
+  border-radius: 30px;
+}
+
+.progress-bar .progress {
+  height: 100%;
+  width: 50%;
+  background: #57595f;
+  border-radius: inherit;
+}
+
+.uploaded-area-box {
+    margin-top: 25px;
+    flex-grow: 1;
+    /* background-color: aquamarine; */
+}
+
+.uploaded-area {
+    /* flex-basis: inherit; */
+    max-height: 200px;
+    overflow-y: scroll;
+    font-size: 12px;
+}
+
+.uploaded-area::-webkit-scrollbar {
+  width: 0px;
+}
+
+.uploaded-area .row .content {
+  display: flex;
+  align-items: center;
+}
+
+.uploaded-area .row .details {
+  display: flex;
+  margin-left: 10px;
+  flex-direction: column;
+}
+
+.uploaded-are .details .size {
+  font-size: 12px;
+  color: #404040;
+}
+
+.uploaded-area .fa-check {
+  color: #6990f2;
+  font-size: 16px;
+}

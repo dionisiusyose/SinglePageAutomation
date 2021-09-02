@@ -1,0 +1,134 @@
+@media screen and (max-width: 1200px) {
+  .white-box {
+    width: 800px;
+  }
+
+  .title {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+
+  .campaign-select-go-container {
+    width: 70px;
+  }
+
+  .select2-dropdown.select2-dropdown--below {
+    width: 300px !important;
+  }
+
+  .select2-container--default .select2-selection--single {
+    padding: 3px;
+    height: 30px;
+    width: 100%;
+    font-size: 10px;
+  }
+
+  .search-btn {
+    width: 70px;
+  }
+
+  .search-btn i {
+    font-size: 20px;
+  }
+
+  /* Upload Area */
+
+  .upload-label {
+    font-size: 15px;
+  }
+
+  .file-upload-container form {
+    height: 80px;
+  }
+
+  .file-upload-container form i {
+    font-size: 15px;
+  }
+
+  .file-upload-container form p {
+    font-size: 12px;
+  }
+
+  section .row {
+    margin-bottom: 10px;
+    padding: 5px 8px;
+  }
+
+  section .row i {
+    font-size: 15px;
+  }
+
+  .progress-area .row .content {
+    width: 100%;
+  }
+
+  .progress-area .details span {
+    font-size: 10px;
+  }
+
+  .progress-area .details {
+    margin-bottom: 5px;
+  }
+
+  .progress-area .progress-bar {
+    height: 6px;
+    width: 100%;
+    border-radius: 30px;
+  }
+
+  .progress-bar .progress {
+    height: 100%;
+    width: 50%;
+    border-radius: inherit;
+  }
+  .uploaded-area {
+    max-height: 186px;
+    overflow-y: scroll;
+    font-size: 10px;
+  }
+
+  .uploaded-area::-webkit-scrollbar {
+    width: 0px;
+  }
+
+  .uploaded-are .details .size {
+    font-size: 10px;
+  }
+
+  .uploaded-area .fa-check {
+    font-size: 11px;
+  }
+
+  /* Right Side */
+  .campaign-description-box {
+    margin-bottom: 40px;
+    padding: 10px 10px;
+  }
+
+  .description-title {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+
+  .description-label {
+    width: 200px;
+    font-size: 13px;
+  }
+
+  .description-input input {
+    font-size: 13px;
+    height: 25px;
+  }
+
+  .save-and-submit-container {
+    height: 30px;
+  }
+
+  .save-and-submit-container a {
+    font-size: 12px;
+  }
+
+  .save-and-submit-container i {
+    font-size: 15px;
+  }
+}
